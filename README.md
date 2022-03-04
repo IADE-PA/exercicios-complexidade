@@ -27,7 +27,7 @@ Para cada tarefa, é necessário identificar a função que melhor descreve o co
 
 ```C
 01. int get(const int* numbers, const int size, const int idx) {
-02.     for(int i = 0; i < idx || i < size; i++) {
+02.     for(int i = 0; i < idx && i < size; i++) {
 03.         if(i == idx) {
 04.             return numbers[i];
 05.         }
