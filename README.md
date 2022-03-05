@@ -39,13 +39,15 @@ Para cada tarefa, é necessário identificar a função que melhor descreve o co
 ## Tarefa 3
 
 ```C
-01. int* scale(const int* numbers, const int size, const int factor) {
-02.     int* scaled = malloc(size * sizeof(int));
-03.     for(int i = 0; i < size; i++) {
-04.         scaled[i] = numbers[i] * factor;
-05.     }
-06.     return scaled;
-07. }
+01. #include <stdlib.h>
+02
+03. int* scale(const int* numbers, const int size, const int factor) {
+04.     int* scaled = malloc(size * sizeof(int));
+05.     for(int i = 0; i < size; i++) {
+06.         scaled[i] = numbers[i] * factor;
+07.     }
+08.     return scaled;
+09. }
 ```
 
 ## Tarefa 4
