@@ -25,7 +25,7 @@
 | 5     | &emsp; 1      | Retornar.                        |
 | 8     | &emsp; 1      | Retornar.                        |
 
-**Custo:** `3 + 1 + 1 = 5 = O(1)`
+**Custo:** `max(3, 1, 1) = 3 = O(1)`
 
 ## Tarefa 2
 
