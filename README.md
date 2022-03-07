@@ -123,3 +123,49 @@ Para cada tarefa, é necessário identificar a função que melhor descreve o co
 17.     return zeros;
 18. }
 ```
+
+## Tarefa 8
+
+```C
+01. void bubble_sort(int* numbers, const int size) {
+02.     for (int i = 0; i < size - 1; i++) {
+03.         for (int j = 0; j < size - i - 1; j++) {
+04.             if (numbers[j] > numbers[j + 1]) {
+05.                 int temp = numbers[j];
+06.                 numbers[j] = numbers[j + 1];
+07.                 numbers[j + 1] = temp;
+08.             }
+09.         }
+10.     }
+11. }
+```
+
+## Tarefa 9
+
+```C
+01. int fib_rec(const int n) {
+02.     if (n == 0) {
+03.         return 0;
+04.     } else if (n == 1) {
+05.         return 1;
+06.     } else {
+07.         return fib(n-1) + fib(n-2);
+08.     }
+09. }
+```
+
+## Tarefa 10
+
+```C
+01. int fib_pd(const int n) {
+02.     int a = 0;
+03.     int b = 1;
+04.     int c = 0;
+05.     for (int i = 0; i < n; i++) {
+06.         c = a + b;
+07.         a = b;
+08.         b = c;
+09.     }
+10.     return c;
+11. }
+```
