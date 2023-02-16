@@ -1,4 +1,4 @@
-# Programação e Algoritmos 2020 2021 - [IADE UE](https://www.iade.europeia.pt/)
+# Programação e Algoritmos - [IADE UE](https://www.iade.europeia.pt/)
 
 ## Laboratório 1
 
