@@ -1,14 +1,14 @@
 # Programação e Algoritmos - [IADE UE](https://www.iade.europeia.pt/)
 
-## Laboratório 1
+## Descrição
 
-Este laboratório propõe vários exercícios sobre cálculo de complexidade.
+Este repositório propõe vários exercícios sobre cálculo de complexidade.
 
 Para cada tarefa, é necessário identificar a função que melhor descreve o comportamento assimptótico de cada algoritmo. É também necessário identificar o que representa cada parâmetro da função.
 
-# Tarefas
+# Exercícios
 
-## Tarefa 1
+## Exercício 1
 
 ```C
 01. #include <stdbool.h> 
@@ -23,7 +23,7 @@ Para cada tarefa, é necessário identificar a função que melhor descreve o co
 10. }
 ```
 
-## Tarefa 2
+## Exercício 2
 
 ```C
 01. int get(const int* numbers, const int size, const int idx) {
@@ -36,7 +36,7 @@ Para cada tarefa, é necessário identificar a função que melhor descreve o co
 08. }
 ```
 
-## Tarefa 3
+## Exercício 3
 
 ```C
 01. #include <stdlib.h>
@@ -50,7 +50,7 @@ Para cada tarefa, é necessário identificar a função que melhor descreve o co
 09. }
 ```
 
-## Tarefa 4
+## Exercício 4
 
 ```C
 01. int find_a(const int* numbers, const int size, const int target) {
@@ -63,7 +63,7 @@ Para cada tarefa, é necessário identificar a função que melhor descreve o co
 08. }
 ```
 
-## Tarefa 5
+## Exercício 5
 
 ```C
 01. char find_b(const char* strings, const int map_size, 
@@ -77,7 +77,7 @@ Para cada tarefa, é necessário identificar a função que melhor descreve o co
 09. }
 ```
 
-## Tarefa 6
+## Exercício 6
 
 ```C
 01. // numbers é uma lista de números, ordenada.
@@ -101,7 +101,7 @@ Para cada tarefa, é necessário identificar a função que melhor descreve o co
 19. }
 ```
 
-## Tarefa 7
+## Exercício 7
 
 ```C
 01. double* zscore(const int* numbers, const int size) {
@@ -122,4 +122,50 @@ Para cada tarefa, é necessário identificar a função que melhor descreve o co
 16.     }
 17.     return zeros;
 18. }
+```
+
+## Exercício 8
+
+```C
+01. void bubble_sort(int* numbers, const int size) {
+02.     for (int i = 0; i < size - 1; i++) {
+03.         for (int j = 0; j < size - i - 1; j++) {
+04.             if (numbers[j] > numbers[j + 1]) {
+05.                 int temp = numbers[j];
+06.                 numbers[j] = numbers[j + 1];
+07.                 numbers[j + 1] = temp;
+08.             }
+09.         }
+10.     }
+11. }
+```
+
+## Exercício 9
+
+```C
+01. int fib_rec(const int n) {
+02.     if (n == 0) {
+03.         return 0;
+04.     } else if (n == 1) {
+05.         return 1;
+06.     } else {
+07.         return fib(n-1) + fib(n-2);
+08.     }
+09. }
+```
+
+## Exercício 10
+
+```C
+01. int fib_pd(const int n) {
+02.     int a = 0;
+03.     int b = 1;
+04.     int c = 0;
+05.     for (int i = 0; i < n; i++) {
+06.         c = a + b;
+07.         a = b;
+08.         b = c;
+09.     }
+10.     return c;
+11. }
 ```
