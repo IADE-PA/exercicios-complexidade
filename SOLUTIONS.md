@@ -2,9 +2,9 @@
 
 ## Laboratório 1 (Resolução)
 
-# Tarefas
+# Exercícios
 
-## Tarefa 1
+## Exercício 1
 
 ```C
 01. #include <stdbool.h> 
@@ -27,7 +27,7 @@
 
 **Custo:** `max(3, 1, 1) = 3 = O(1)`
 
-## Tarefa 2
+## Exercício 2
 
 ```C
 01. int get(const int* numbers, const int size, const int idx) {
@@ -54,7 +54,7 @@ Definimos `n = min(idx, size)`.
 
 **Custo:** `2 + n * (10 + max(3, 4, 0)) + 1 = 3 + 14n = O(n)`
 
-## Tarefa 3
+## Exercício 3
 
 ```C
 01. #include <stdlib.h>
@@ -81,7 +81,7 @@ Definimos `n = size`.
 
 **Custo:** `4 + 2 + n * (6 + 9) + 2 = 8 + 15n = O(n)`
 
-## Tarefa 4
+## Exercício 4
 
 ```C
 01.  int find_a(const int* numbers, const int size, const int target) {
@@ -108,7 +108,7 @@ Definimos `n = size`.
 
 **Custo:** `2 + n * (2 + max(5, 2, 0)) + 1 = 3 + 7n = O(n)`
 
-## Tarefa 5
+## Exercício 5
 
 ```C
 01. char find_b(const char* strings, const int map_size, 
@@ -136,7 +136,7 @@ Definimos `n = key_size`.
 
 **Custo:** `2 + 2 + n * (6 + 6) + 4 + 2 = 10 + 12n = O(n)`
 
-## Tarefa 6
+## Exercício 6
 
 ```C
 01. // numbers é uma lista de números, ordenada.
@@ -197,7 +197,7 @@ Como `b^y=x` implica `log_b(x) = y`, concluímos que `2^k = n`, implica `log_2(n
 
 **Custo:** `O(log(n))`
 
-## Tarefa 7
+## Exercício 7
 
 ```C
 01. double* zscore(const int* numbers, const int size) {
